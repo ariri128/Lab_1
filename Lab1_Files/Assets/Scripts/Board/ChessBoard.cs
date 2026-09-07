@@ -35,7 +35,9 @@ public class ChessBoard : MonoBehaviour
             {
                 bool isLightSquare = (column + row) % 2 == 0;
                 Gizmos.color = isLightSquare ? lightSquareColor : darkSquareColor;
+
                 Vector3 squareCenter = GetSquareCenter(new Vector2Int(column, row));
+                squareCenter.z += 0.1f; // Draw squares slightly behind piece sprites
                 Gizmos.DrawCube(squareCenter, new Vector3(squareSize, squareSize, 0.01f));
             }
         }

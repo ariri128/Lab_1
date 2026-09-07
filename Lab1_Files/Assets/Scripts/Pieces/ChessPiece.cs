@@ -24,16 +24,23 @@ public class ChessPiece : MonoBehaviour
 
     private void Awake()
     {
-        if (board == null)
-        {
-            board = GetComponentInParent<ChessBoard>();
-        }
+        EnsureBoardReference();
         ApplyVisuals();
     }
 
     private void OnValidate()
     {
+        EnsureBoardReference();
         ApplyVisuals();
+    }
+
+    // Finds the parent ChessBoard if one hasn't been assigned yet
+    private void EnsureBoardReference()
+    {
+        if (board == null)
+        {
+            board = GetComponentInParent<ChessBoard>();
+        }
     }
 
     // Updates the sprite and color tint to match the currently selected piece type
@@ -53,6 +60,7 @@ public class ChessPiece : MonoBehaviour
     // Draws the squares this piece could move to, based on its movement strategy
     private void OnDrawGizmosSelected()
     {
+        EnsureBoardReference();
         if (board == null)
         {
             return;
