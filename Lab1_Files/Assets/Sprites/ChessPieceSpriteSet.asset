@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bac1bfca0ad914b349791a62bf9f8695, type: 3}
+  m_Name: ChessPieceSpriteSet
+  m_EditorClassIdentifier: Assembly-CSharp::ChessPieceSpriteSet
+  spriteEntries:
+  - pieceType: 2
+    sprite: {fileID: -7411164451766530956, guid: 7ab5f749701494d859b7e080fcf08341, type: 3}
+  - pieceType: 5
+    sprite: {fileID: -5599251078739264218, guid: 97ffd45e69f12441895f4d6a6c59c9f2, type: 3}
+  - pieceType: 1
+    sprite: {fileID: -2428051241250483848, guid: a0b70de5659da4050b17036136204348, type: 3}
+  - pieceType: 0
+    sprite: {fileID: -2223498260249388719, guid: 01c6efa4438794197949135ab1ef5560, type: 3}
+  - pieceType: 4
+    sprite: {fileID: -6529137269678239781, guid: 8f04b4ec0109743b1aaafe4f3cd188c6, type: 3}
+  - pieceType: 3
+    sprite: {fileID: -5147424345620012212, guid: f16d57cd5fef249e0b10898a91b92271, type: 3}
